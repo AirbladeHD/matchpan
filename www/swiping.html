@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <link rel="stylesheet" href="css/index.css">
+        <script src="cordova.js"></script>
+        <script src="js/index.js"></script>
+        <script src="js/jquery.js"></script>
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="mainSwipe">
+            <div class="return">←Back</div>
+            <div class="swipeContainer">
+                <div class="swipeElement" id="schnitzel">
+                    <img src="img/schnitzel.jpg" alt="">
+                    <h1 class="title">Wiener Schnitzel</h1>
+                </div>
+                <div class="swipeElement" id="chili">
+                    <img src="img/chili.jpg" alt="">
+                    <h1 class="title">Chili con Carne</h1>
+                </div>
+                <div class="swipeElement" id="steak">
+                    <img src="img/steak.jpg" alt="">
+                    <h1 class="title">Steak</h1>
+                </div>
+                <div class="swipeElement" id="padthai">
+                    <img src="img/padthai.jpg" alt="">
+                    <h1 class="title">Pad Thai</h1>
+                </div>
+                <div class="swipeActive" id="pizza">
+                    <img src="img/pizza.jpg" alt="">
+                    <h1 class="title">Pizza</h1>
+                </div>
+            </div>
+        </div>
+        <div class="swpbuttons">
+            <div class="swpbutton" id="minus">
+                <svg id="minusIcon" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+                    <defs>
+                        <style>
+                            .cls-2 {
+                                fill: #e20f00;
+                            }
+                        </style>
+                    </defs>
+                    <rect class="cls-2" x="-0.65" y="376.35" width="1000" height="250" rx="50"
+                        transform="translate(-208.25 499.94) rotate(-45)" />
+                    <rect class="cls-2" x="373.65" y="1.35" width="250" height="1000" rx="50"
+                        transform="translate(-208.46 499.44) rotate(-45)" />
+                </svg>
+            </div>
+            <div class="swpbutton" id="plus">
+                <svg id="plusIcon" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+                    <defs>
+                        <style>
+                            .cls-1 {
+                                fill: #54c242;
+                            }
+                        </style>
+                    </defs>
+                    <rect class="cls-1" x="374.5" y="1" width="250" height="1000" rx="50" />
+                    <rect class="cls-1" x="-1" y="376.5" width="1000" height="250" rx="50" />
+                </svg>
+            </div>
+        </div>
+    </body>
+</html>

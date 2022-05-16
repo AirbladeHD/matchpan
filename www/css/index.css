@@ -1,0 +1,407 @@
+* {
+    overflow: hidden;
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    background-color:#fff;
+    background-image:linear-gradient(to bottom, #D50535, #CB356B);
+    font-family: system-ui, -apple-system, -apple-system-font, 'Segoe UI', 'Roboto', sans-serif;
+    font-size:12px;
+    height:100vh;
+    margin:0px;
+    padding:0px;
+    color: white;
+    padding: env(safe-area-inset-top, 0px) env(safe-area-inset-right, 0px) env(safe-area-inset-bottom, 0px) env(safe-area-inset-left, 0px);
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 100%;
+    flex-direction: column;
+    text-align: center;
+}
+
+.mainSwipe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    text-align: center;
+}
+
+.mainSpace {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+    height: 100%;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textfield {
+    border-radius: 10px;
+    height: 40px;
+    width: 75%;
+    margin: 1vh;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-size: 18px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.intro {
+    justify-content: space-around;
+}
+
+.button {
+    background-color: white;
+    color: #DA204A;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 75%;
+    font-weight: bold;
+    font-size: 18px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+#profile {
+    width: 100%;
+    height: 80%;
+    border-radius: 30px;
+    background-image: linear-gradient(to bottom, #D50535, #CB356B);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.contentContainer {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contentContainer > * {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+.svgIcon {
+    width: 8%;
+}
+
+.active {
+    fill: #D50535;
+}
+
+.listContainer {
+    height: 90%;
+    color: black;
+    width: 90%;
+}
+
+.listContainer h1 {
+    font-weight: 500;
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.element {
+    width: 45%;
+    height: 25vh;
+    background-color: red;
+    margin: 1vh;
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.listImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.element p {
+    position: absolute;
+    bottom: 0;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+}
+
+.shadow {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 1) 130%);
+}
+
+.return {
+    font-size: 18px;
+    color: #D50535;
+    font-weight: bold;
+    position: absolute;
+    margin: 2vh;
+    left: 0;
+    top: 0;
+}
+
+.spaceBetween {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.selector {
+    background-image: linear-gradient(to top, #D50535, #CB356B);
+    width: 100%;
+    height: 85%;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.headingBlack {
+    color: black;
+    font-weight: 500;
+}
+
+.headingContainer {
+    width: 90%;
+    text-align: left;
+}
+
+.back {
+    font-size: 18px;
+    color: #D50535;
+    font-weight: bold;
+    width: 90%;
+    text-align: left;
+    margin: 2vh;
+}
+
+.pans {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin-top: 2vh;
+    min-height: 100%;
+    overflow: scroll;
+}
+
+#navbar {
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    justify-content: space-around;
+}
+
+.filters {
+    background-image: linear-gradient(to top, #D50535, #CB356B);
+    width: 100%;
+    height: 85%;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.filterContainer {
+    width: 90%;
+    height: 5%;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.filter {
+    width: 50%;
+    height: 100%;
+    color: white;
+    font-weight: 500;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+}
+
+.filterActive {
+    background-color: white;
+    color: black;
+}
+
+.swipeContainer {
+    height: 75vh;
+    width: 150%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5vh;
+    padding: 0;
+}
+
+.swipeElement {
+    height: 75vh;
+    background-color: red;
+    width: 90vw;
+    overflow: hidden;
+    border-radius: 40px;
+    transform: translateX(0px);
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+
+.swipeElement img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.swipeActive {
+    height: 75vh;
+    background-color: red;
+    width: 90vw;
+    overflow: hidden;
+    border-radius: 40px;
+    transform: translateX(0px);
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+
+.swipeActive img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.title {
+    font-size: 40px;
+    position: absolute;
+    left: 4vh;
+    bottom: 0;
+}
+
+.swpbuttons {
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    overflow: visible;
+    position: absolute;
+    bottom: 2vh;
+}
+
+.swpbutton {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: #EDEDED;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swpbutton svg {
+    width: 50%;
+}
+
+.resultTitle {
+    font-size: 40px;
+}
+
+.subtitle {
+    font-size: 20px;
+}
+
+.resultContainer {
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    position: absolute;
+    top: 5vh;
+}
+
+.results {
+    min-height: 40vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+
+.result {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 1vh;
+}
+
+.result img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.showButton {
+    font-size: 22px;
+    font-style: italic;
+}
+
+.buttonBorderless {
+    position: absolute;
+    bottom: 4vh;
+    font-size: 22px;
+    right: 4vh;
+    font-weight: 500;
+}
