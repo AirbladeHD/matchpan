@@ -5,7 +5,7 @@ Grundidee:
 
 Eine App, mit der sich Freundesgruppen gemeinsame Entscheidungen vereinfachen können.
 
--> Swiping System
+-> Swiping System<br>
 -> Unterschiedliche Kategorien ("Pans")
 -> Einladung per Freundescode
 
