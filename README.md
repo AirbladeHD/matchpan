@@ -6,7 +6,7 @@ Grundidee:
 Eine App, mit der sich Freundesgruppen gemeinsame Entscheidungen vereinfachen können.
 
 -> Swiping System<br>
--> Unterschiedliche Kategorien ("Pans")
--> Einladung per Freundescode
+-> Unterschiedliche Kategorien ("Pans")<br>
+-> Einladung per Freundescode<br>
 
 Kompilierte APK liegt im Stammverzeichnis
